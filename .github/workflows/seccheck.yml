@@ -2,6 +2,8 @@ name: Check secret on workflow
 
 on:
   workflow_dispatch:
+  pull_request:
+    types: [opened]
 
 jobs:
   check-secret:
